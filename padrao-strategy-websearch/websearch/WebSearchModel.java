@@ -48,14 +48,13 @@ public class WebSearchModel {
      * quais consultas interessam a ele.
      */
     public void addQueryObserver(QueryObserver queryObserver, QueryFilter filter) {
-        
+
         observers.add(new FilteredObserver(queryObserver, filter));
     }
 
     private void notifyAllObservers(String line) {
         for (FilteredObserver entry : observers) {
-            // Pergunta a estrategia antes de notificar: o modelo nao sabe
-            // COMO o filtro decide, so que ele implementa QueryFilter.
+           
             if (entry.filter.shouldNotify(line)) {
                 entry.observer.onQuery(line);
             }

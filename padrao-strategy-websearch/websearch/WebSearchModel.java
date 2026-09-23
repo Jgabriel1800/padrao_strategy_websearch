@@ -12,6 +12,7 @@ public class WebSearchModel {
 
     public interface QueryObserver {
         void onQuery(String query);
+        
     }
 
     /**

@@ -5,6 +5,7 @@
 public class LongQueryFilter implements WebSearchModel.QueryFilter {
     private final int maxLength;
 
+
     public LongQueryFilter(int maxLength) {
         this.maxLength = maxLength;
     }

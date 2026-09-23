@@ -4,6 +4,7 @@
  */
 public class FriendFilter implements WebSearchModel.QueryFilter {
     private static final String WORD = "friend";
+    
 
     @Override
     public boolean shouldNotify(String query) {

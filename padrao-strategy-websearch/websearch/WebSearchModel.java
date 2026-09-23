@@ -12,7 +12,7 @@ public class WebSearchModel {
 
     public interface QueryObserver {
         void onQuery(String query);
-        
+
     }
 
     /**
@@ -48,6 +48,7 @@ public class WebSearchModel {
      * quais consultas interessam a ele.
      */
     public void addQueryObserver(QueryObserver queryObserver, QueryFilter filter) {
+        
         observers.add(new FilteredObserver(queryObserver, filter));
     }
 

@@ -23,7 +23,7 @@ Ferramenta: Claude (Anthropic). Anexos: `Lista Avaliativa I.pdf` (enunciado) e `
 >    ("Oh Yes! ..." para consultas com 'friend', sem diferenciar maiúsculas, e "So long ..." para consultas
 >    com mais de 60 caracteres).
 
-## Passo a passo (tutorial) sugerido pela IA para esta questão
+## Passo a passo sugerido pela IA para esta questão
 
 | Passo | O que fazer | Commit correspondente |
 |---|---|---|
